@@ -69,3 +69,9 @@ let car = {
 }
 car.startEngine();
 
+// deleting the key  of an object
+delete captainAmerica.lastname;
+console.log(captainAmerica.lastname);
+
+
+
