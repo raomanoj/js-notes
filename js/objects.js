@@ -33,14 +33,14 @@ let captainAmerica = {
         country:"USA"
     },
     sayHi: function () {
-        console.log(`Hello my name is ${this,firstname}`);
+        console.log(`Hello my name is ${this.firstname}`);
     }
 };
 
 console.log(captainAmerica);
 console.log(captainAmerica.friends);
 console.log(captainAmerica.friends[0]);
-// console.log(captainAmerica.sayHi()); //method of accessing
+captainAmerica.sayHi(); //method of accessing
 
 // methods -> object ke andar function
 //console.log(str.toUpperCase());
