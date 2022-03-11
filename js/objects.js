@@ -56,9 +56,16 @@ console.log(captainAmerica[haathi]); //bracket notation is usage
 }
 
 
-
-
-
-
 // methods -> object ke andar function
 //console.log(str.toUpperCase());
+
+// this
+let car = {
+    name: "Ferrari",
+    model:"2022",
+    startEngine: function () {
+        console.log(`starting the engine of the car ${this.name}`);
+    }
+}
+car.startEngine();
+
