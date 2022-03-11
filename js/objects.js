@@ -4,6 +4,7 @@ let obj = {};
 console.log(obj); // empty objects
 
 let person = {
+    // key (property, method): value
     name: "manoj",
     age: 25,
     phone: 9999999999,
@@ -41,6 +42,23 @@ console.log(captainAmerica);
 console.log(captainAmerica.friends);
 console.log(captainAmerica.friends[0]);
 captainAmerica.sayHi(); //method of accessing
+
+
+// for loop
+// in keyword in JS is used to get keys  from that object
+for (let haathi in captainAmerica) {
+    //key
+    console.log(haathi );
+// haathi jo variable hai uske ander meri key ki value padi hue hai
+//value
+// variable ke ander jo binded value hai wo chahiye
+console.log(captainAmerica[haathi]); //bracket notation is usage
+}
+
+
+
+
+
 
 // methods -> object ke andar function
 //console.log(str.toUpperCase());
