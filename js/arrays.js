@@ -9,7 +9,7 @@ console.log(cars[0]);
 console.log(cars[3]);
 
 // replacing elements in array
-cars[3] = "Mahindra";
+//cars[3] = "Mahindra";
 console.log(cars[3]);
 
 // adding elements in array
@@ -66,3 +66,10 @@ console.log(array2d.length); // number of rows in a 2d array
 console.log(array2d[0].length); // number of columns in a 2d array
 
 
+let table = [10, 20, 30, 50];
+console.log(table);
+for(let i=0;i<4;i++)
+{
+    table[i] = [100];
+    console.log(table);
+}
