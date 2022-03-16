@@ -66,3 +66,42 @@ if (isSPresent) {
     console.log("data after removing extra lines\r\n",tempArr);
 }
     console.table(contentArr);
+
+    contentArr = tempArr;
+    let indexofN = optionsArr.indexofN("-n");
+    let indexofB = optionsArr.indexofB("-b");
+    // if -n and -b is not found, -1 is return
+
+    let finaloption = "";
+    // if both -n and -b are present
+    if (indexofN != -1 && indexofB != -1){
+        
+     if (indexofN < indexofB) {
+        finaloption = "-n";
+        }
+     else {
+        finaloption = "-b";
+         } 
+    }
+// either -n is present or -b is present
+else {
+    if (indexofN != -1){
+        finaloption = "-n";
+    }
+    else if (indexofB != -1){
+        finaloption = "-b"
+    }
+}
+// calling of functions by evaluating finaloption 
+    if (finaloption == "-n") {
+        modifiycontentByN();
+       }
+    else (finaloption == "-b"){
+        modifiycontentByB();
+    }
+    function modifiycontentByN() {
+
+    }
+    function modifiycontentByB() {
+
+    }
